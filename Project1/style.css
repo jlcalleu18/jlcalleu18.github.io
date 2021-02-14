@@ -1,0 +1,182 @@
+/* ----------------------- Index ----------------------- */
+
+.top_container {
+  margin: 10px auto 10px auto;
+  width: 100%;
+  height: 100px;
+}
+.top_container_sub {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.top_container_sub1 img {
+  float: right;
+  width: 10%;
+  height: 100px;
+  background-color: black;
+}
+.top_img {
+  width: 50%;
+  height: 100%;
+}
+.h1_Iceland {
+  text-align: center;
+}
+
+/*-----------------------    Iceland Container    ------------------- */
+.icelan_container {
+  border: 2px solid black;
+  background-color: lightpink;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.icelan_container p {
+  color: white;
+}
+
+.sub_img {
+  margin-left: 80px;
+  width: 30%;
+  height: 40%;
+}
+.sub_img img {
+  border: 4px solid slateblue;
+  width: 80%;
+  height: 100%;
+}
+.sub {
+  margin-left: 80px;
+  width: 43%;
+  height: 40%;
+}
+.sub p {
+  margin-top: 70px;
+  font-size: medium;
+  font-family: initial;
+}
+figcaption {
+  color: white;
+  font-style: italic;
+}
+.separate {
+  background-color: aqua;
+  margin: 10%;
+}
+/* --------------------------    Upcoming events    ----------------------*/
+
+.travel li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.table {
+  border: 3px solid black;
+}
+.table_color {
+  background-color: lightgreen;
+}
+.logos {
+  margin-left: 5%;
+}
+.logos th img {
+  width: 45px;
+}
+.logos td {
+  padding-left: 15px;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------- Hiking ------ Nothern Lights  ----------------- */
+
+.heading {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hiking_container {
+  margin: 20px 20px 20px 25px;
+  width: 100%;
+  height: 300px;
+}
+
+.hiking_sub {
+  margin-left: 2px;
+  margin-right: 4px;
+  float: left;
+  width: 30%;
+  height: 90%;
+}
+.hiking_sub img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+.hiking_sub_p {
+  margin-left: 2px;
+  float: left;
+  background-color: antiquewhite;
+  border: 5px solid royalblue;
+  width: 30%;
+  height: 89%;
+  overflow: hidden;
+}
+.hiking_sub_p p {
+  margin: 36px;
+  font-size: 17px;
+  text-align: center;
+}
+.northern_sub {
+  margin-left: 2px;
+  float: left;
+  background-color: antiquewhite;
+  border: 5px solid royalblue;
+  overflow: hidden;
+  width: 30%;
+  height: 89%;
+}
+.northern_sub p {
+  margin: 36px 47px auto 60px;
+  font-size: 17px;
+  text-align: left;
+}
+
+/* ------------paragraph---------------- */
+.paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* -----------------------------     Menu    ----------------------------- */
+.menu ul {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu li a {
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.menu li span {
+  color: black;
+  padding: 5px;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu li a:hover {
+  color: darkgreen;
+}
+.txt_bottom {
+  text-align: center;
+}
