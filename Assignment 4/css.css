@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.container p {
+  position: absolute;
+  color: lightslategrey;
+  font-family: monospace;
+  font-size: 2vw;
+  top: 50%;
+  left: 36%;
+}
+
+.clock1 {
+  background-color: lightskyblue;
+  position: relative;
+  width: 30%;
+  display: inline-block;
+}
+
+.clock1 .hand1 {
+  animation: hourRotation 120s linear infinite;
+}
+
+.clock1 .hand2 {
+  animation: minuteRotation 10s linear infinite;
+}
+
+.clock2 {
+  background-color: thistle;
+  position: relative;
+  width: 30%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.clock2 .hand1 {
+  animation: onehour 10s linear;
+}
+
+.clock2 .hand2 {
+  animation: minuteRotation 10s linear;
+}
+
+img {
+  width: 100%;
+}
+
+.hand1 {
+  position: absolute;
+  width: 32%;
+  left: 49.9%;
+  bottom: 41.7%;
+  transform-origin: center left;
+}
+
+.hand2 {
+  position: absolute;
+  width: 35%;
+  left: 50%;
+  bottom: 41.5%;
+  right: 100%;
+  transform: rotate(270deg);
+  transform-origin: left center;
+}
+
+@keyframes hourRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes minuteRotation {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(269deg);
+  }
+}
+
+@keyframes onehour {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
