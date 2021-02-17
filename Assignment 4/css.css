@@ -37,6 +37,7 @@
 
 .clock2 .hand1 {
   animation: onehour 10s linear;
+  transform: rotate(30deg);
 }
 
 .clock2 .hand2 {
