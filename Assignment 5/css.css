@@ -1,0 +1,171 @@
+body {
+    background-color: thistle;
+}
+
+.container {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.product {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    margin: auto auto auto 12%;
+}
+
+.sub {
+    border: 2px solid red;
+    height: 100%;
+    padding-bottom: 30%;
+}
+
+.sub img {
+    width: 50%;
+    margin: 10% auto auto 26%;
+}
+
+.sub p {
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.sub a {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    padding: 4%;
+    margin-left: 31%;
+}
+
+.modal1 {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(12, 68, 152, 0.797);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal1:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.milkshake {
+    position: relative;
+    width: 60%;
+    background-color: lightcoral;
+    margin: 3% auto auto auto;
+    height: 80%;
+}
+
+.milkshake h2 {
+    background-color: pink;
+    color: white;
+    position: absolute;
+    font-size: 2vw;
+    margin: 0%;
+    width: 98%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.milkshake p {
+    background-color: pink;
+    font-size: 1.1vw;
+    position: absolute;
+    margin: 12% 2% auto 2%;
+    padding: 3%;
+}
+
+.milkshake img {
+    position: absolute;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 30%;
+}
+
+.milkshake a {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+}
+
+/* -------------------modal 2 ------------------- */
+
+.modal2 {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(2, 172, 133, 0.673);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal2:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.pancakes {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    background-color: lightblue;
+    margin: 3% auto auto auto;
+}
+
+.pancakes h2 {
+    background-color: pink;
+    color: white;
+    position: absolute;
+    font-size: 2vw;
+    margin: 0%;
+    width: 98%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.pancakes p {
+    background-color: pink;
+    font-size: 1.1vw;
+    position: absolute;
+    margin: 12% 2% auto 2%;
+    padding: 3%;
+}
+
+.pancakes img {
+    position: absolute;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 30%;
+}
+
+.pancakes a {
+    background-color: white;
+    color: rgb(63, 62, 62);
+    position: absolute;
+    left: 97%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    width: 3%;
+}
