@@ -1,39 +1,43 @@
-// document.getElementById().addEventListener("click", );
-
 let text = document.getElementById("text_line");
-let botton = document.getElementById("button");
-boton.addEventListener("click", checkNumber);
+let button = document.getElementById("button");
+button.addEventListener("click", checkNumber);
 
+// let play = document.getElementById("play");
+// play.addEventListener("click", )
 function random() {
-    var x = math.floor((math.random() * 100) + 1);
+    let x = Math.trunc(Math.random() * 100) + 1;
     return x;
 }
 
-// function randomnnumber() {
-//     var int = document.getElementById().value;
-// }
+const random1 = random();
+console.log(random1); // delete later
+var score = 10;
 
-checkNumber(random());
+const highscore = [0];
 
-function checkNumber(random) {
-    if (text == random) {
-        console.log('You got it')
-            // displaytext("you got it")
-    } else if (text > random) {
-        console.log('too high')
-            // displaytext("too high")
-    } else if (text < random)
-        console.log('too low')
-        // displaytext("too low");
+function checkNumber() {
+    score--;
+    console.log(score)
+    const num = Number(text.value);
+    console.log(num); // delete later
+    if (num !== 0) {
+        if (num === random1) {
+            console.log('You got it');
+            if (highscore[0] < score) {
+                highscore.push(score);
+                highscore.shift();
+                console.log(highscore);
+            }
+        } else if (num > random1) {
+            console.log('Too high');
+        } else if (num < random1) {
+            console.log('Too Low');
+        }
+    } else {
+        console.log('Enter a Number');
+    }
 }
 
+function checkHighscore() {
 
-
-
-
-// document.getElementById().addEventListener("click");
-// if (x == document.getElementById()) {
-//     // displaytext("you got it")
-// } else if (x > int) {
-//     // displaytext("too high")
-// } else if (x < int) displaytext("too low");
+}
