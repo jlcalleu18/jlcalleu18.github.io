@@ -21,22 +21,52 @@
     <div class="container_play">
         <input class="play" type="button" id="play" value="Play!" />
     </div>
-    <div class="body">
-        <div class="center">
-            <h1>Guess My number!</h1>
-            <div class="result">
-                <hr>
-                <h2>?</h2>
-            </div>
+
+    <div class="center">
+        <h1 id="numGotIt">Guess My number!</h1>
+        <div class="result">
+            <hr>
+            <h2 id="resultNumber">?</h2>
         </div>
+    </div>
+
+    <div class="container_footer">
+
+        <div class="output">
+
+
+            <div id="low" class="low">
+            </div>
+            <div> <img class="high" src="images/high.png" alt="">
+                <span id=" TH">Too High!</span>
+            </div>
+            <div> <img class="error" src="images/error.png" alt="">
+                <span id="CN">No Number!</span>
+            </div>
+            <div> <img class="win" src="images/win.png" alt="">
+                <span id="CN">Correct Number!</span>
+            </div>
+
+
+            <!-- 
+            <p id="checkNum"></p>
+            <p>Score: <span id="sc"> </span></p>
+            <p>Highscore: <span id="Highsc"></span></p> -->
+
+
+
+
+
+        </div>
+        <div class="input">
+            <input class="textBox" type="text" id="text_line" /><br>
+            <input class="BtCheck" type="button" value="Check" id="button" />
+        </div>
+
     </div>
 
 
 
-
-
-    <input type="text" id="text_line" />
-    <input type="button" value="Check" id="button" />
 
     <script src="script.js"></script>
 </body>
