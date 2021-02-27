@@ -1,4 +1,21 @@
-.header p {
+body {
+    background-color: lightpink;
+}
+
+.text_header {
+    color: white;
+}
+
+.container_play {
     text-align: right;
-    color: aqua;
+}
+
+.play {
+    padding: 2%;
+    background-color: lightblue;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    color: white;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
