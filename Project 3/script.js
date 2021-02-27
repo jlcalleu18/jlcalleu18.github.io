@@ -5,26 +5,14 @@ button.addEventListener("click", checkNumber);
 var play = document.getElementById("play");
 play.addEventListener("click", reset);
 
-
-
-
-// function random() {
-//     let x = Math.trunc(Math.random() * 100) + 1;
-//     return x;
-// }
-
-
-// console.log(randomNum); // delete later
 let randomNum = 0;
 
 function reset() {
     var remove1 = text.value = '';
     score = 10;
     randomNum = Math.trunc(Math.random() * 100) + 1;
-    console.log(randomNum);
+    console.log(randomNum); // delete later
 }
-
-
 
 var score = 10;
 const highscore = [0];
