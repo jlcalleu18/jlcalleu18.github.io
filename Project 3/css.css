@@ -37,6 +37,7 @@
             
             .result {
                 position: relative;
+                width: 100%;
             }
             
             .line {
@@ -45,7 +46,7 @@
                 height: 1vh;
                 background-color: rgb(254, 254, 254);
                 border: none;
-                top: 31%;
+                top: 40%;
             }
             
             .result h2 {
