@@ -1,5 +1,7 @@
             body {
-                background-color: lightpink;
+                background: linear-gradient(to top right, rgb(227, 104, 216), lightyellow);
+                font-family: Comic Sans MS;
+                height: 100vh;
             }
             
             .text_header {
@@ -23,7 +25,6 @@
                 border-radius: 8px;
                 color: white;
                 font-size: 2vw;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             
             .center {
@@ -55,23 +56,24 @@
                 margin-top: 2%;
                 width: 100%;
                 display: inline-flex;
+                padding-bottom: 1%;
             }
             
             .output {
+                position: relative;
                 width: 30%;
-                margin-left: 15%;
+                margin-left: 20%;
             }
             
             .input {
                 text-align: center;
-                height: 100%;
-                width: 30%;
-                margin-left: 15%;
+                width: 25%;
+                margin-left: 12%;
             }
             
             .textBox {
                 color: white;
-                width: 30%;
+                width: 45%;
                 font-size: 5vw;
                 text-align: center;
                 padding: 10%;
@@ -83,36 +85,49 @@
                 margin-top: 10%;
                 padding: 2%;
                 background-color: lightblue;
-                border: 2px solid gold;
+                border: 3px solid black;
                 border-radius: 8px;
                 color: white;
                 font-size: 2vw;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             /* --------------------------next ------------ */
             
             .sub1 {
-                display: inline-flex;
-                margin-bottom: 10%;
+                margin-bottom: 15%;
+                margin-left: 8%;
             }
             
             .sub2 {
-                display: inline-flex;
-                margin-left: 10%;
+                margin-left: 20%;
             }
             
             .sub3 {
-                display: inline-flex;
+                margin-left: 15%;
+            }
+            
+            .sub1 img {
+                top: 15%;
+                left: 1%;
+                position: absolute;
+                width: 8%;
+            }
+            
+            .sub2 img {
+                top: 54%;
+                left: 13%;
+                position: absolute;
+                width: 8%;
+            }
+            
+            .sub3 img {
+                top: 74%;
+                left: 8%;
+                position: absolute;
+                width: 8%;
             }
             
             .output p {
                 color: white;
-                font-size: 1.5vw;
+                font-size: 2vw;
                 margin-left: 2%;
-            }
-            
-            .output img {
-                margin-top: 6%;
-                height: 100%;
-                width: 10%;
             }
