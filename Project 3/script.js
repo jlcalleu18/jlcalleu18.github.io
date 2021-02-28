@@ -5,8 +5,8 @@ var play = document.getElementById("play");
 play.addEventListener("click", reset);
 
 let numGotIt = document.getElementById("numGotIt");
-let checkNum = document.getElementById("checkNum");
 let resultNumber = document.getElementById("resultNumber");
+let checkNum = document.getElementById("checkNum");
 
 
 let randomNum = 0;
