@@ -18,6 +18,10 @@ function reset() {
     randomNum = Math.trunc(Math.random() * 100) + 1;
     console.log(randomNum); // delete later
     sc.innerHTML = '';
+    numGotIt.innerHTML = 'Guess My number!';
+    checkNum.innerHTML = 'Let\'s Start!';
+    resultNumber.innerHTML = '?';
+    document.body.style.background = "linear-gradient(to top right, rgb(227, 104, 216), lightyellow)";
 }
 
 
@@ -27,7 +31,7 @@ function Getimg(src) {
 }
 reset();
 var score = 10;
-const highscore = [0];
+const highscore = [-10];
 
 function checkNumber() {
     score--;
@@ -39,7 +43,7 @@ function checkNumber() {
         if (num === randomNum) {
             numGotIt.innerHTML = 'You got it!';
             checkNum.innerHTML = 'Correct Number!';
-            Getimg("/images/win.png");
+            Getimg("images/win.png");
             resultNumber.innerHTML = num;
             document.body.style.background = "linear-gradient(to top right, rgba(11, 213, 119, 0.92), rgba(31, 114, 238, 0.92))";
             if (highscore[0] < score) {
@@ -47,14 +51,13 @@ function checkNumber() {
                 highscore.shift();
                 console.log(highscore);
                 Highsc.innerHTML = highscore;
-
             }
         } else if (num > randomNum) {
             checkNum.innerHTML = 'Too high';
-            Getimg("/images/high.png");
+            Getimg("images/high.png");
         } else if (num < randomNum) {
             checkNum.innerHTML = 'Too Low';
-            Getimg("/images/low.png");
+            Getimg("images/low.png");
 
         }
     } else {
