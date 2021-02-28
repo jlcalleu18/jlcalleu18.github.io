@@ -1,7 +1,7 @@
             body {
                 background: linear-gradient(to top right, rgb(227, 104, 216), lightyellow);
                 font-family: Comic Sans MS;
-                height: 100vh;
+                height: 95vh;
             }
             
             .text_header {
@@ -106,7 +106,7 @@
             }
             
             .sub1 img {
-                top: 15%;
+                top: 13%;
                 left: 1%;
                 position: absolute;
                 width: 8%;

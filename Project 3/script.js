@@ -7,7 +7,8 @@ play.addEventListener("click", reset);
 let numGotIt = document.getElementById("numGotIt");
 let resultNumber = document.getElementById("resultNumber");
 let checkNum = document.getElementById("checkNum");
-
+let sc = document.getElementById("sc");
+let Highsc = document.getElementById("Highsc");
 
 let randomNum = 0;
 
@@ -16,22 +17,21 @@ function reset() {
     score = 10;
     randomNum = Math.trunc(Math.random() * 100) + 1;
     console.log(randomNum); // delete later
-    Getimg();
+    sc.innerHTML = '';
 }
-
-var score = 10;
-const highscore = [0];
-
-
 
 function Getimg(src) {
     let img = document.getElementById('high');
     img.src = src;
 }
+reset();
+var score = 10;
+const highscore = [0];
 
 function checkNumber() {
     score--;
     console.log(score)
+    sc.innerHTML = score;
     const num = Number(text.value);
     console.log(num); // delete later
     if (num !== 0) {
@@ -44,6 +44,8 @@ function checkNumber() {
                 highscore.push(score);
                 highscore.shift();
                 console.log(highscore);
+                Highsc.innerHTML = highscore;
+
             }
         } else if (num > randomNum) {
             checkNum.innerHTML = 'Too high';
@@ -54,7 +56,7 @@ function checkNumber() {
         }
     } else {
         checkNum.innerHTML = 'Enter a Number';
-        Getimg("/images/high.png");
+        Getimg("/images/Error1.png");
 
     }
 }
