@@ -20,6 +20,7 @@ function reset() {
     sc.innerHTML = '';
 }
 
+
 function Getimg(src) {
     let img = document.getElementById('high');
     img.src = src;
@@ -40,6 +41,7 @@ function checkNumber() {
             checkNum.innerHTML = 'Correct Number!';
             Getimg("/images/win.png");
             resultNumber.innerHTML = num;
+            document.body.style.background = "linear-gradient(to top right, rgba(11, 213, 119, 0.92), rgba(31, 114, 238, 0.92))";
             if (highscore[0] < score) {
                 highscore.push(score);
                 highscore.shift();
@@ -53,6 +55,7 @@ function checkNumber() {
         } else if (num < randomNum) {
             checkNum.innerHTML = 'Too Low';
             Getimg("/images/low.png");
+
         }
     } else {
         checkNum.innerHTML = 'Enter a Number';
