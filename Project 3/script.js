@@ -16,21 +16,18 @@ function reset() {
     score = 10;
     randomNum = Math.trunc(Math.random() * 100) + 1;
     console.log(randomNum); // delete later
-    img();
+    Getimg();
 }
 
 var score = 10;
 const highscore = [0];
 
-// function img() {
-//     var image = document.createElement("IMG");
-//     image.setAttribute("src", "images/high.png");
-//     document.querySelector('low').appendChild(x);
-// }
 
 
-
-
+function Getimg(src) {
+    let img = document.getElementById('high');
+    img.src = src;
+}
 
 function checkNumber() {
     score--;
@@ -41,6 +38,7 @@ function checkNumber() {
         if (num === randomNum) {
             numGotIt.innerHTML = 'You got it!';
             checkNum.innerHTML = 'Correct Number!';
+            Getimg("/images/win.png");
             resultNumber.innerHTML = num;
             if (highscore[0] < score) {
                 highscore.push(score);
@@ -49,11 +47,14 @@ function checkNumber() {
             }
         } else if (num > randomNum) {
             checkNum.innerHTML = 'Too high';
+            Getimg("/images/high.png");
         } else if (num < randomNum) {
             checkNum.innerHTML = 'Too Low';
+            Getimg("/images/low.png");
         }
     } else {
         checkNum.innerHTML = 'Enter a Number';
+        Getimg("/images/high.png");
 
     }
 }

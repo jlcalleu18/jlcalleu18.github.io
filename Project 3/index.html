@@ -16,10 +16,11 @@
 <body>
     <div class="text_header">
         <p>Guess the number Between 1 and 100</p>
+        <input class="play" type="button" id="play" value="Play!" />
     </div>
 
     <div class="container_play">
-        <input class="play" type="button" id="play" value="Play!" />
+
     </div>
 
     <div class="center">
@@ -31,32 +32,19 @@
     </div>
 
     <div class="container_footer">
-
         <div class="output">
-
-
-            <div id="low" class="low">
+            <div class="sub1">
+                <img id="high" alt="">
+                <p id="checkNum"> </p>
             </div>
-            <div> <img class="high" src="images/high.png" alt="">
-                <span id=" TH">Too High!</span>
+            <div class="sub2">
+                <img src="images/score.png" alt="">
+                <p>Score: <span id="sc"> </span></p>
             </div>
-            <div> <img class="error" src="images/error.png" alt="">
-                <span id="CN">No Number!</span>
+            <div class="sub3">
+                <img src="images/highscore.png" alt="">
+                <p>Highscore: <span id="Highsc"></span></p>
             </div>
-            <div> <img class="win" src="images/win.png" alt="">
-                <span id="CN">Correct Number!</span>
-            </div>
-
-
-            <!-- 
-            <p id="checkNum"></p>
-            <p>Score: <span id="sc"> </span></p>
-            <p>Highscore: <span id="Highsc"></span></p> -->
-
-
-
-
-
         </div>
         <div class="input">
             <input class="textBox" type="text" id="text_line" /><br>
@@ -64,10 +52,6 @@
         </div>
 
     </div>
-
-
-
-
     <script src="script.js"></script>
 </body>
 
