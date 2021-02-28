@@ -58,7 +58,6 @@
             }
             
             .output {
-                background-color: antiquewhite;
                 width: 30%;
                 margin-left: 15%;
             }
@@ -93,27 +92,27 @@
             /* --------------------------next ------------ */
             
             .sub1 {
-                background-color: blueviolet;
+                display: inline-flex;
+                margin-bottom: 10%;
             }
             
             .sub2 {
-                background-color: aquamarine;
+                display: inline-flex;
+                margin-left: 10%;
             }
             
             .sub3 {
-                background-color: brown;
+                display: inline-flex;
             }
             
             .output p {
-                float: right;
-                font-weight: bold;
-                font-family: fantasy;
                 color: white;
-                font-size: 2vw;
-                background-color: antiquewhite;
+                font-size: 1.5vw;
+                margin-left: 2%;
             }
             
             .output img {
-                background-color: violet;
+                margin-top: 6%;
+                height: 100%;
                 width: 10%;
             }
