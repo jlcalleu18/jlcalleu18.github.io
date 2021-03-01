@@ -12,8 +12,10 @@ console.log(`Tip of 100$ is ${calTip(100)}`);
 
 const bills1 = new Array(125, 555, 44);
 const tips1 = new Array(calTip(bills1[0]), calTip(bills1[1]), calTip(bills1[2]));
-const total1 = new Array(bills1[0] + tips1[0], bills1[1] + tips1[1], bills1[2] + tips1[2]);
-console.log(`Total: ${total1}`);
+const total2 = new Array(bills1[0] + tips1[0], bills1[1] + tips1[1], bills1[2] + tips1[2]);
+console.log(`Total from the bill ${bills1[0]} is ${total2[0]}`);
+console.log(`Total from the bill ${bills1[1]} is ${total2[1]}`);
+console.log(`Total from the bill ${bills1[2]} is ${total2[2]}`);
 
 
 console.log('');
@@ -59,7 +61,7 @@ const John = {
     }
 
 }
-Lucas.calcBMI > John.calcBMI ? 
+Lucas.calcBMI() > John.calcBMI() ? 
 console.log(`${Lucas.firstName} ${Lucas.lastName}'s BMI (${Lucas.calcBMI()}) is higher than ${John.firstName} ${John.lastName}'s BMI (${John.calcBMI()})`): console.log(`${John.firstName} ${John.lastName}'s BMI (${John.calcBMI()}) is higher than ${Lucas.firstName} ${Lucas.lastName}'s BMI (${Lucas.calcBMI()})`);
 
 
