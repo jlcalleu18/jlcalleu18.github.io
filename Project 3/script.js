@@ -31,7 +31,7 @@ function Getimg(src) {
 }
 reset();
 var score = 10;
-const highscore = [-10];
+const highscore = [0];
 
 function checkNumber() {
     score--;
@@ -39,7 +39,7 @@ function checkNumber() {
     sc.innerHTML = score;
     const num = Number(text.value);
     console.log(num); // delete later
-    if (num !== 0) {
+    if (num > 0) {
         if (num === randomNum) {
             numGotIt.innerHTML = 'You got it!';
             checkNum.innerHTML = 'Correct Number!';
