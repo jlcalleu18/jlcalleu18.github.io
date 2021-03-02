@@ -41,7 +41,6 @@ function checkNumber() {
     console.log(num); // delete later
     if (num > 0) {
         if (num === randomNum) {
-            score--;
             numGotIt.innerHTML = 'You got it!';
             checkNum.innerHTML = 'Correct Number!';
             Getimg("images/win.png");
@@ -50,9 +49,10 @@ function checkNumber() {
             if (highscore[0] < score) {
                 highscore.push(score);
                 highscore.shift();
-                console.log(highscore);
+                console.log('gsdfg' + highscore);
                 Highsc.innerHTML = highscore;
             }
+            score--;
         } else if (num > randomNum) {
             checkNum.innerHTML = 'Too high';
             Getimg("images/high.png");
