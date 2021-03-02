@@ -19,7 +19,7 @@ function reset() {
     console.log(randomNum); // delete later
     sc.innerHTML = '';
     numGotIt.innerHTML = 'Guess My number!';
-    checkNum.innerHTML = 'Let\'s Start!';
+    checkNum.innerHTML = '👌🏼 Let\'s Start!';
     resultNumber.innerHTML = '?';
     document.body.style.background = "linear-gradient(to top right, rgb(227, 104, 216), lightyellow)";
 }
@@ -34,13 +34,14 @@ var score = 10;
 const highscore = [0];
 
 function checkNumber() {
-    score--;
+
     console.log(score)
     sc.innerHTML = score;
     const num = Number(text.value);
     console.log(num); // delete later
     if (num > 0) {
         if (num === randomNum) {
+            score--;
             numGotIt.innerHTML = 'You got it!';
             checkNum.innerHTML = 'Correct Number!';
             Getimg("images/win.png");
@@ -55,9 +56,11 @@ function checkNumber() {
         } else if (num > randomNum) {
             checkNum.innerHTML = 'Too high';
             Getimg("images/high.png");
+            score--;
         } else if (num < randomNum) {
             checkNum.innerHTML = 'Too Low';
             Getimg("images/low.png");
+            score--;
 
         }
     } else {
@@ -65,4 +68,5 @@ function checkNumber() {
         Getimg("/images/Error1.png");
 
     }
+
 }
