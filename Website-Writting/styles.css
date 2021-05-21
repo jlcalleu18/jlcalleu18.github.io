@@ -309,7 +309,7 @@ nav .nav-section img {
 .img2-data-collection img {
   margin: auto;
   width: 50%;
-  height: 60vh;
+
   display: block;
 }
 .img3-data-collection img {
@@ -388,4 +388,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/* -----------terms ---------- */
+.full-terms {
+  font-size: 1.8rem;
+  margin: auto;
+  width: 70%;
 }
