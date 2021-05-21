@@ -143,7 +143,7 @@ nav .nav-section img {
 }
 
 /* ---------module--------  */
-.modal1 {
+.modal {
   position: fixed;
   top: 0px;
   right: 0px;
@@ -151,17 +151,17 @@ nav .nav-section img {
   left: 0px;
   background-color: rgba(12, 68, 152, 0.797);
 }
-#milkshake {
+#termsCon {
   opacity: 1;
   pointer-events: all;
 }
 
-#milkshake:target {
+#termsCon:target {
   opacity: 0;
   pointer-events: none;
 }
 
-.milkshake {
+.termsCon {
   position: relative;
   width: 60%;
   background-color: lightcoral;
@@ -169,7 +169,7 @@ nav .nav-section img {
   height: 80vh;
 }
 
-.milkshake h2 {
+.termsCon h2 {
   background-color: pink;
   color: white;
   position: absolute;
@@ -181,7 +181,7 @@ nav .nav-section img {
   padding-left: 2%;
 }
 
-.milkshake ul {
+.termsCon ul {
   color: rgb(0, 0, 0);
   background-color: pink;
   font-size: 2rem;
@@ -190,7 +190,7 @@ nav .nav-section img {
   padding: 3%;
 }
 
-.milkshake .accept {
+.termsCon .accept {
   background-color: lightskyblue;
   border-radius: 10px;
   color: black;
@@ -202,7 +202,7 @@ nav .nav-section img {
   font-size: 25px;
   padding: 1%;
 }
-.milkshake .refuse {
+.termsCon .refuse {
   background-color: lightskyblue;
   border-radius: 10px;
   color: black;
